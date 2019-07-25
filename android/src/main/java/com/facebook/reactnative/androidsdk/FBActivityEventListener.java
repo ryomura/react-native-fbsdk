@@ -27,7 +27,7 @@ import com.facebook.CallbackManager;
 import com.facebook.react.bridge.BaseActivityEventListener;
 
 /* package */ class FBActivityEventListener extends BaseActivityEventListener {
-  private CallbackManager mCallbackManager = CallbackManager.Factory.create();
+  private static CallbackManager mCallbackManager = CallbackManager.Factory.create();
 
   @Override
   public void onActivityResult(Activity activity, int requestCode, int resultCode, Intent data) {
